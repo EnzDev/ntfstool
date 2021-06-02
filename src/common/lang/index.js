@@ -26,6 +26,7 @@ import ko from './ko'
 import es from './es'
 import ru from './ru'
 import de from './de'
+import fr from './fr'
 
 import enLocale from 'element-ui/lib/locale/lang/en'
 import zhcnLocale from 'element-ui/lib/locale/lang/zh-CN'
@@ -35,6 +36,7 @@ import jaLocale from 'element-ui/lib/locale/lang/ja'
 import esLocale from 'element-ui/lib/locale/lang/es'
 import ruLocale from 'element-ui/lib/locale/lang/ru-RU'
 import deLocale from 'element-ui/lib/locale/lang/de'
+import frLocale from 'element-ui/lib/locale/lang/fr'
 
 const languages_select = {
     languages: [
@@ -63,6 +65,9 @@ const languages_select = {
         }, {
             text: "Deutsch",
             val: 'de'
+        }, {
+            text: "Français",
+            val: 'fr'
         }
 
     ]
@@ -76,5 +81,6 @@ export default {
     ko: {...ko, ...languages_select, ...koLocale},
     es: {...es, ...languages_select, ...esLocale},
     ru: {...ru, ...languages_select, ...ruLocale},
-    de: {...de, ...languages_select, ...deLocale}
+    de: {...de, ...languages_select, ...deLocale},
+    fr: {...fr, ...languages_select, ...frLocale},
 }
